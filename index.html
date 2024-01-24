@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Books</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/357c06fe96.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="images/book-solid.svg" type="image/x-icon">
+</head>
+<body>
+  <header class="container">
+    <img src="images/logo.png" id="logo">
+    <div id="cart-icon-container">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <p id="cart-count" style="pointer-events: none;">0</p>
+    </div>
+  </header>
+  <main>
+    <section id="hero" class="container">
+      <div id="hero-text">
+        <p>Daily Books</p>
+        <p>Find your next life changing book in our daily list of books!</p>
+        <button id="explore-btn">Explore Books</button>
+      </div>
+      <img src="images/man-reading-a-book.png" width="500px" alt="">
+    </section>
+    <section id="cards" class="container">
+
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 | Daily Books | All Rights Reserved</p>
+  </footer>
+  <div id="cart-container" class="visible">
+    <p id="cart-title">Shopping Cart</p>
+    <div id="cart-items">
+      
+    </div>
+    <div id="cart-btns-container">
+      <button id="close-btn">Close</button>
+      <button id="checkout-btn">Check Out</button>
+    </div>
+  </div>
+</body>
+</html>

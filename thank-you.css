@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+body {
+  background-color: #001f3f;
+}
+
+h1 {
+  color: #1ed61e; 
+  text-align: center; 
+  font-size: 90px; 
+  margin-top: 350px;
+  font-family: Oleo Script;
+}
+
+@media (width < 900px) {
+  h1 {
+    font-size: 50px;
+  }
+}

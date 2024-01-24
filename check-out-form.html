@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Out Form</title>
+  <link rel="stylesheet" href="check-out-form.css">
+  <script src="check-out-form.js" defer></script>
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("7cw-_d10CKKId7E8D");
+    })();
+  </script>
+</head>
+<body>
+  <form id="form">
+    <p class="section-title">Customer information</p>
+    <input id="first-name" type="text" placeholder="First name *" required>
+    <input id="last-name" type="text" placeholder="Last name *" required>
+    <input id="email" type="email" placeholder="Email Address *" required>
+    <p class="section-title">Billing details</p>
+    <input id="country" type="text" placeholder="Country / Region *" required>
+    <input id="town" type="text" placeholder="Town / City *" required>
+    <input id="street" type="text" placeholder="Street name and house number *" required>
+    <input id="apartment" type="text" placeholder="Apartment number (optional)">
+    <input id="postcode" type="text" placeholder="Postcode / ZIP *" required>
+    <input id="phone" type="number" placeholder="Phone *" required>
+    <p class="section-title">Your order</p>
+    <div id="products-header">
+      <p>Product</p>
+      <p>Subtotal</p>
+    </div>
+    <div id="list-container">
+      
+    </div>
+    <div id="products-total">
+      <p>Total</p>
+      <p id="total"></p>
+    </div>
+    <button id="order" type="submit">PLACE ORDER</button>
+  </form>
+</body>
+</html>

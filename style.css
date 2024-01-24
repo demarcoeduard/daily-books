@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oleo Script';
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #001f3f;
+}
+
+.container {
+  width: 1536px;
+  margin: auto;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #001f3f;
+  z-index: 10;
+}
+
+header i {
+  font-size: 50px;
+  color: #ffd700;
+  cursor: pointer;
+}
+
+#logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+#cart-icon-container {
+  position: relative;;
+}
+
+#cart-count {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+
+/* HERO */
+
+#hero {
+  display: flex;
+  padding-top: 300px;
+  margin-bottom: 300px;
+  justify-content: space-between;
+}
+
+#hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+}
+
+#hero-text p:first-of-type {
+  font-size: 150px;
+  color: #ffd700;
+}
+
+#hero-text p:last-of-type {
+  font-size: 50px;
+  padding-bottom: 50px;
+  color: #ffd700;
+}
+
+#hero-text button {
+  font-size: 30px;
+  background-color: #ffd700;
+  color: #001f3f;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  cursor: pointer;
+}
+
+/* CARDS */
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 120px;
+  row-gap: 50px;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  z-index: 9;
+}
+
+.card img {
+  width: 150px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.card {
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  background-color: #ffd700;
+  border-radius: 32px;
+  position: relative;
+  padding-bottom: 50px;
+  z-index: 9;
+}
+
+.card p {
+  color: #001f3f;
+  font-size: 20px;
+}
+
+.card p:nth-child(2) {
+  text-align: center;
+  margin: auto;
+  font-size: 22px;
+}
+
+.card p:nth-child(3) {
+  text-align: center;
+  margin: auto;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 10px 10px 10px;
+  width: 200px;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 15%
+}
+
+.card button {
+  background-color: #001f3f;
+  color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+}
+
+/* INFO */
+
+.info {
+  position: absolute;
+  background-color: #001f3f;
+  width: 15%;
+  height: 15%;
+  right: 0;
+  padding-top: 10px;
+  padding-right: 5px;
+  border-bottom-left-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  border-top-right-radius: 27px;
+  cursor: pointer;
+}
+
+.info p {
+  color: white;
+}
+
+.info > .info-text {
+  visibility: hidden;
+  padding-top: 100px;
+  opacity: 0;
+  transition: all 0s
+}
+
+.info-hover {
+  position: absolute;
+  background-color: #001f3f;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 0px;
+  border-radius: 27px;
+}
+
+.info-btn {
+  text-align: end;
+  padding-right: 10px;
+  pointer-events: none;
+}
+
+.info-hover > .info-text {
+  transition: all 0.3s step-end;
+  visibility: visible;
+  padding-top: 100px;
+  opacity: 1;
+}
+
+/* CART */
+
+#cart-container {
+  background-color: #052f5a;
+  width: 300px;
+  height: 600px;
+  position: fixed;
+  top: 7%;
+  right: 0;
+  animation: growDown 0.3s;
+  transform-origin: right;
+  z-index: 10;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.visible {
+  display: none;
+}
+
+#cart-title {
+  color: #ffd700;
+  padding-left: 5px;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0e4a86;
+  padding: 5px 0px 5px 0px;
+  margin-bottom: 5px;
+}
+
+#cart-container img {
+  width: 45px;
+}
+
+.item-price {
+  color: #ffd700;
+}
+
+.count-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: white;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+  color: #ffd700;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#cart-btns-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#cart-btns-container button {
+  width: 100%;
+  display: inline-block;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+#close-btn {
+  border-bottom-left-radius: 5px;
+}
+
+#checkout-btn {
+  background-color: #ffd700;
+}
+
+/* FOOTER */
+
+footer p {
+  text-align: center;
+}
+
+/* MEDIA */
+
+@media (width <= 1536px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media (width <= 1280px) {
+  .container {
+    width: 1024px;
+  }
+
+  #hero-text p:first-of-type {
+    font-size: 100px;
+  }
+  
+  #hero-text p:last-of-type {
+    font-size: 30px;
+  }
+  
+  #hero-text button {
+    font-size: 20px;
+    width: 150px;
+  }
+
+  #hero img {
+    width: 400px;
+  }
+}
+
+@media (width <= 1024px) {
+  .container {
+    width: 768px;
+  }
+
+  #hero-text p:first-of-type {
+    font-size: 70px;
+  }
+  
+  #hero-text p:last-of-type {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  
+  #hero-text button {
+    font-size: 15px;
+    width: 100px;
+  }
+
+  #hero img {
+    width: 300px;
+  }
+
+  .card img {
+    width: 100px;
+    padding-bottom: 20px;
+  }
+  
+  .card {
+    width: 200px;
+    height: 350px;
+    margin-left: 0px;
+  }
+  
+  .card p {
+    font-size: 15px;
+  }
+  
+  .card p:nth-child(2) {
+    font-size: 20px;
+  }
+  
+  .card-bottom {
+    width: 170px;
+    align-items: center;
+  }
+  
+  .card button {
+    font-size: 18px;
+  }
+}
+
+@media (width <= 768px) {
+  .container {
+    width: 640px;
+  }
+
+  #hero img {
+    display: none;;
+  }
+}
+
+@media (width <= 640px) {
+  .container {
+    width: 475px;
+  }
+}
+
+@media (width <= 475px) {
+  .container {
+    width: 100%;
+  }
+}

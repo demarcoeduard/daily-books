@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Razboaiele Oscarului",
+    "author": "Michael Schulman",
+    "price": 75,
+    "image": "images/book1.png",
+    "info": "A war between people that desire to get what they want and that will help you to learn how they did it"
+  },
+  {
+    "id": 2,
+    "name": "Cum sa lucrezi cu (aproape) oricine",
+    "author": "Michael Bungay Stanier",
+    "price": 49,
+    "image": "images/book2.png",
+    "info": "How to get to know and understand almost all the people around you better then they understand themselves"
+  },
+  {
+    "id": 3,
+    "name": "Tot ea...Becoming Meryl Streep",
+    "author": "Michael Schulman",
+    "price": 39,
+    "image": "images/book3.png",
+    "info": "How to still be the real you in a world that you need to be the exact oposite"
+  },
+  {
+    "id": 4,
+    "name": "Migdala",
+    "author": "Sohn Won-Pyung",
+    "price": 38,
+    "image": "images/book4.png",
+    "info": "The story of the life hardships and how to make them your strenghts"
+  },
+  {
+    "id": 5,
+    "name": "Beyond the Story",
+    "author": "Myeongseok Kang",
+    "price": 149,
+    "image": "images/book5.png",
+    "info": "How did they get famous by using two skils: know the public and know what they want"
+  },
+  {
+    "id": 6,
+    "name": "Cantecul relevantei",
+    "author": "Seth Godin",
+    "price": 49,
+    "image": "images/book6.png",
+    "info": "The way one is supposed to get through life, by flying right through the obstacles life puts in front of you"
+  }
+]
