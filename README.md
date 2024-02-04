@@ -1,6 +1,5 @@
 # Daily Books
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/demarcoeduard/daily-books.svg)](https://github.com/demarcoeduard/daily-books/issues)
 [![GitHub forks](https://img.shields.io/github/forks/demarcoeduard/daily-books.svg)](https://github.com/demarcoeduard/daily-books/network)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/demarcoeduard/daily-books)
