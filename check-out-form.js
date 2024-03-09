@@ -24,6 +24,6 @@ orderBtn.addEventListener('click', (e) => {
     e.preventDefault();
     window.location.href = 'thank-you.html';
   } else {
-    alert('Please fill out all required fields.')
+    alert('Please fill out all required fields.');
   }
 })

@@ -45,7 +45,7 @@ function displayBooks() {
   })
 }
 
-displayBooks()
+displayBooks();
 
 cardsList.addEventListener('click', (event) => {
   let positionClick = event.target;
@@ -111,7 +111,7 @@ cartItems.addEventListener('click', (event) => {
 
     let priceElement = selectedItem.querySelector('.item-price');
     let newPrice = selectedBook.price * newCount;
-    priceElement.innerHTML = `${newPrice} $`
+    priceElement.innerHTML = `${newPrice} $`;
   } else if (positionClick.classList.contains('fa-chevron-left')) {
     let currentCount = +cartCount.innerHTML;
     let newCartCount = currentCount - 1;
@@ -148,7 +148,7 @@ checkOutBtn.addEventListener('click', () => {
       let image = selectedItem.querySelector('img').src;
       let count = selectedItem.querySelector('.count-container p').innerHTML;
       let price = selectedItem.querySelector('.item-price').innerHTML.replace(/\D/g, '');
-      items.push({image: image, count: count, price: price})
+      items.push({image: image, count: count, price: price});
     }
   }
   localStorage.setItem('products', JSON.stringify(items));
