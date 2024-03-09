@@ -21,24 +21,6 @@ totalEl.innerHTML = `${total} $`
 
 orderBtn.addEventListener('click', (e) => {
   if (form.checkValidity()) {
-    let name = document.getElementById('first-name').value;
-    let email = document.getElementById('email').value;
-    let serviceID = "service_1bpot8w";
-    let templateID = "template_0auvtdf";
-
-    let templateParams = {
-      to_name: name,
-      to_email: email,
-      from_name: 'Daily Books',
-      message: 'Thank you for your purchase! Your order will arive as soon as posible!',
-    }
-
-    emailjs.send(serviceID, templateID, templateParams)
-    .then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
-   }, function(error) {
-      console.log('FAILED...', error);
-   });
     e.preventDefault();
     window.location.href = 'thank-you.html';
   } else {
