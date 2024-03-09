@@ -18,7 +18,7 @@ exploreBtn.addEventListener('click', () => {
   cardsList.scrollIntoView()
 });
 
-let books = []
+let books = [];
 
 function displayBooks() {
   fetch('books.json')
