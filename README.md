@@ -1,8 +1,7 @@
 # Daily Books
 
-[![GitHub issues](https://img.shields.io/github/issues/demarcoeduard/daily-books.svg)](https://github.com/demarcoeduard/daily-books/issues)
-[![GitHub forks](https://img.shields.io/github/forks/demarcoeduard/daily-books.svg)](https://github.com/demarcoeduard/daily-books/network)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/demarcoeduard/daily-books)
+[![GitHub forks](https://img.shields.io/github/forks/demarcoeduard/daily-books.svg)](https://github.com/demarcoeduard/daily-books/network)
 
 
 Welcome to Daily Books! This repository is about a website that publishes daily lists of books. You can add these books to your cart, specify the quantity you want, and place your order after successfully completing the required form.
@@ -25,3 +24,14 @@ Welcome to Daily Books! This repository is about a website that publishes daily 
 3. **Navigate to the Project Directory:**
    ```bash
    cd daily-books
+4. **Access the Application:**
+   
+   Visit http://localhost:4200 in your web browser to use the application.
+
+## Usage
+
+- **Add Books to Cart**: Click on the "Add to Cart" button beside each book to include it in your shopping cart.
+  
+- **Manage Shopping Cart**: Modify the quantity of each book you choose to purchase.
+  
+- **Complete Form Fields**: Complete the required fields to finalize the purchase.
