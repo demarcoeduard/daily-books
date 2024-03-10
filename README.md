@@ -26,7 +26,7 @@ Welcome to Daily Books! This repository is about a e-commerce website that publi
    cd daily-books
 4. **Access the Application:**
    
-   Visit http://localhost:4200 in your web browser to use the application.
+   Visit http://localhost:5500 in your web browser to use the application.
 
 ## Usage
 
