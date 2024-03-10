@@ -86,11 +86,11 @@ cardsList.addEventListener('click', (event) => {
 })
 
 cartIcon.addEventListener('click', () => {
-  cartContainer.classList.toggle('visible');
+  cartContainer.classList.toggle('invisible');
 })
 
 closeBtn.addEventListener('click', () => {
-  cartContainer.classList.toggle('visible');
+  cartContainer.classList.toggle('invisible');
 })
 
 cartItems.addEventListener('click', (event) => {
@@ -125,7 +125,7 @@ cartItems.addEventListener('click', (event) => {
     let newCount = itemCount - 1;
 
     if (newCount === 0) {
-      selectedItem.classList = 'visible';
+      selectedItem.classList = 'invisible';
     } else {
       countItem.innerHTML = newCount;
   
