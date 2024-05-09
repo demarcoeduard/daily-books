@@ -1,7 +1,6 @@
 # Daily Books
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/demarcoeduard/daily-books)
-[![GitHub forks](https://img.shields.io/github/forks/demarcoeduard/daily-books.svg)](https://github.com/demarcoeduard/daily-books/network)
 
 
 Welcome to Daily Books! This repository is about a e-commerce website that publishes daily lists of books. You can add these books to your cart, specify the quantity you want, and place your order after successfully completing the required form.
